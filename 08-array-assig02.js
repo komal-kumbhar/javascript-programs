@@ -49,6 +49,37 @@ console.log(`====== 8. Is number available ======`);
 let includeNumber = array.includes(23);
 console.log(includeNumber);
 
+console.log(`========== Sum of the array elements even positioned===========`);
+ let arrayNew = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11]; 
+ let addition = 0;
+ for (let index = 0; index < arrayNew.length; index++) {
+    if (index%2==0) {
+        const element = arrayNew[index];
+        addition= addition+ element;
+  }
+ }
+console.log(addition);
+
+console.log(`========== Sum of the array elements odd positioned===========`);
+let add = 0;
+for (let index = 0; index < arrayNew.length; index++) {
+  if (index%2==1) {
+      const element = arrayNew[index];
+      add= add + element;
+}
+}
+console.log(add);
+
+
+console.log(`========== Sum the array elements ===========`);
+
+let sum = 0;
+for (const element of arrayNew) {
+  sum = sum + element;
+}
+console.log(`Sum of elements : ${sum}`);
+
+
 console.log(`==== insert number at index 3====`);
 let number1 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
 const spliceNum = number1.splice(3, 0, 55, 66);
