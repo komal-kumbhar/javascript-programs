@@ -59,7 +59,7 @@ console.log(`The array of substring from "${param3}" is :`,result1);
 const result2 = splitString(param4, ' ,');
 console.log(`The array of substring from "${param4}" is :`,result2);
 
-console.log(`======== 6. Reverse string using Predefined Method =========`);
+console.log(`======== 6 A. Reverse string using Predefined Method =========`);
 function getReverseString(str) {
    const getReverseString =str.split('').reverse().join('');
    return getReverseString;
@@ -70,7 +70,7 @@ const str10 = "UI Developer";
 console.log(`The reverse string "${str9}" is : ${getReverseString(str9)}`);
 console.log(`The reverse string "${str10}" is : ${getReverseString(str10)}`);
 
-console.log(`======== 6. Reverse string without using Predefined Method =========`);
+console.log(`======== 6 B. Reverse string without using Predefined Method =========`);
 function reverseStr(param) {
     let reserveString ;
     for (let i=param.length-1; i>=0; i--){
@@ -85,3 +85,50 @@ const param7 = "Java";
 console.log(`The reverse string Without using method "${param5}" is : ${getReverseString(param5)}`);
 console.log(`The reverse string Without using method "${param6}" is : ${getReverseString(param6)}`);
 console.log(`The reverse string Without using method "${param7}" is : ${getReverseString(param7)}`);
+
+console.log(`=========================== 7. Count character "a" ====================`);
+
+function charCount(str) {
+    let count = 0;
+    for (const char of str) {     
+           if (char=="a"|| char=="A") {
+                count++;
+           }          
+    }
+    console.log(`The numbers of character "a" in string ${str} = ${count}`);
+}
+charCount("JavaScript");
+charCount("Do or Die");
+charCount("Learn with us. Job with us");
+charCount("Empowering Dreams, Guaranteeing Futures");
+charCount("Anny, My favorite fruit is Apple");
+
+console.log(`=========================== 8. Count vowels ====================`);
+function vowelCount(param){
+    let vowels = "aeiouAEIOU";
+    let count = 0;
+    for (let i= 0; i<=param.length-1; i++){
+            if (vowels.includes(param[i])){
+                count++;
+            }            
+    }
+        console.log(`The numbers of vowels in string ${param} is = ${count}`);
+        
+    }
+    vowelCount("JavaScript");
+    vowelCount("HTML and CSS");
+    vowelCount("Language of Internet");
+    vowelCount("I am UI Developer");
+    vowelCount("Do or Die");
+
+console.log(`=========================== 9.Count Word ====================`);
+
+function wordCount(str) {
+    let words = str.split(' ');
+   console.log(`Total words in "${str}" string is : ${words.length}`);
+    
+}
+wordCount("JavaScript The language of Internet");
+wordCount("Enhance Your Learning Journey with Exclusive Add-ons");
+wordCount("Beyond frameworks, Beyond Imagination");
+wordCount("I am passionate software developer");
