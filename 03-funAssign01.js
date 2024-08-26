@@ -22,7 +22,7 @@ function personalDetails(firstName, lastName, collegeName){
 }
 personalDetails("Komal", "Kumbhar", "YP college");
 
-console.log("=======Addition of Values");
+console.log("=======Addition of Values ========");
 function addThreeValues(val1, val2, val3) {
     var result= val1 + val2 + val3
     console.log("Addition is :",result);

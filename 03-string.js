@@ -77,3 +77,8 @@ console.log("Total number of words: ", result.length);
 console.log(` Given sentence - ${myLove} Total number of words ${result}`);
 
 console.log(`I love only "JavaScript" `);
+console.log("========== String Template ==============");
+console.log(`I love only "JavaScript"`);
+var city = "Pune";
+var country = "India";
+console.log(`My city name is: ${city} and country is ${country}`);
