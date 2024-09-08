@@ -11,3 +11,8 @@ const promiseNotes = new Promise( (resolve, rejected)=> {
  }).finally(()=>{
      console.log('I must have notes'); 
  });
+
+ console.log(`======= Remove Child ==========`);
+const elementUL = document.querySelector("ul");
+const elementReact = document.querySelector("#react");
+elementUL.removeChild(elementReact);

@@ -133,7 +133,7 @@ wordCount("Enhance Your Learning Journey with Exclusive Add-ons");
 wordCount("Beyond frameworks, Beyond Imagination");
 wordCount("I am passionate software developer");
 
-console.log(`=========================== 9.Duplicate character count  ====================`);
+console.log(`=========================== 10.Duplicate character count  ====================`);
 
 let str = "Banana";  // a - 3, n - 2
 
@@ -165,6 +165,55 @@ doubleChar("Apple");
 doubleChar("Software Developer");
 
 
+console.log(`======================== 11.Palindrom { similar from starting and end } ====================`);
+
+    function isPalindrom(sentence) {
+
+        const str = sentence.toLowerCase().split("");
+        for(let i=0; i<str.length; i++){
+            if (str[i] !== str[str.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+const strings = ['madam', 'banana', 'radar', 'Civil', 'Noon', 'stats'];
+
+strings.forEach(sentence =>{
+    if ( isPalindrom(sentence)){
+        console.log(`"${sentence}" is Palindrome.`);    
+    }else {
+        console.log(`"${sentence}" is not Palindrome.`); 
+    }
+});
 
 
+console.log(`======================== 12.Anagram { same characters in different order } ====================`);
+
+ function isAnagram(str1, str2) {
+    const lenStr1 = str1.toLowerCase().length;
+    const lenStr2 = str2.toLowerCase().length;
+    if (lenStr1 !== lenStr2) {
+        console.log(`str is not anagram`);
+        
+    }
+    const para1 = str1.toLowerCase().split("").sort().join("");
+    const para2 = str2.toLowerCase().split("").sort().join("");
+    if(para1==para2){
+        console.log(`"${str1}" and "${str2}" is anagram`);
+        
+    }else{
+        console.log(`"${str1}" and "${str2}" is not anagram`);
+    }
+ }
+ isAnagram("Listen", "silent");
+ isAnagram("heart", "earth");
+ isAnagram("debit card", "credit card");
+
+
+console.log(`======================== 13.Remove characters from string ====================`);
+
+ function removeChar(str, removeChar) {
     
+ }
